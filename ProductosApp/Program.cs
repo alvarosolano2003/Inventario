@@ -6,6 +6,7 @@ using Domain.Interfaces;
 using Infraestructure.Empleados;
 using Infraestructure.Productos;
 using ProductosApp.Formularios;
+using ProductosApp.Formularios.MetodosInventario;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,7 +35,7 @@ namespace ProductosApp
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmProductos(container.Resolve<IProductoService>()));
+            Application.Run(new FrmInventario());
         }
     }
 }

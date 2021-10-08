@@ -36,6 +36,8 @@ namespace ProductosApp.Formularios
             nudMayor.Visible = false;
             nudMenor.Visible = false;
             btnFind.Visible = false;
+            btnCalculoPromedio.Visible = false;
+            btnEntraSalida.Visible = false;
         }
 
         private void BtnNew_Click(object sender, EventArgs e)
@@ -220,6 +222,17 @@ namespace ProductosApp.Formularios
             }
             e.Handled = true;
             MessageBox.Show("Solo debe de ingresar números", "Error en el id", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnMetodos_Click(object sender, EventArgs e)
+        {
+            btnEntraSalida.Visible = true;
+            btnCalculoPromedio.Visible = true;
+        }
+
+        private void btnEntraSalida_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
